@@ -3,12 +3,16 @@ package manager;
 import domain.ListFilms;
 
 
+
     public class ListFilmsManager {
         private ListFilms[] playbill = new ListFilms[0];
         private int limit;
 
         public ListFilmsManager() {
             limit = 5;
+        }
+        public ListFilmsManager(int limit) {
+            this.limit = limit;
         }
 
 
